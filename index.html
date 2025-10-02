@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Inventario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo" width="24">
+      <span>Sistema de Inventario</span>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn login-btn">Iniciar Sesión</button>
+      <button class="icon-btn">
+        <img src="img/flecha-abajo.svg" alt="Menú" width="20">
+      </button>
+      <button class="icon-btn">
+        <img src="img/usuario.svg" alt="Usuario" width="20">
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <a href="#">Productos</a>
+    <a href="#" class="active">Categorías</a>
+    <a href="#">Usuarios</a>
+    <a href="#">Movimientos</a>
+    <a href="#">Devoluciones</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <div class="header-section">
+      <h2>Gestión de Categorías</h2>
+      <button class="btn new-btn" id="btn-nueva">+ Nueva Categoría</button>
+    </div>
+
+    <!-- Tarjetas de categorías -->
+    <div class="cards" id="cards-container">
+      <div class="card">
+        <div class="card-header">
+          <span>Frutas</span>
+          <div class="square-icon">
+            <img src="img/naranja.jpeg" alt="Icono categoría" width="24">
+          </div>
+        </div>
+        <p> producto</p>
+        <div class="card-actions">
+          <button class="btn edit-btn">Editar</button>
+          <button class="btn delete-btn">Eliminar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span>Verduras</span>
+          <div class="square-icon">
+            <img src="img/tomate.jpeg" alt="Icono categoría" width="24">
+          </div>
+        </div>
+        <p>1 producto</p>
+        <div class="card-actions">
+          <button class="btn edit-btn">Editar</button>
+          <button class="btn delete-btn">Eliminar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span>Lácteos</span>
+          <div class="square-icon">
+            <img src="img/leche.jpeg" alt="Icono categoría" width="24">
+          </div>
+        </div>
+        <p> productos</p>
+        <div class="card-actions">
+          <button class="btn edit-btn">Editar</button>
+          <button class="btn delete-btn">Eliminar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span>Carnes</span>
+          <div class="square-icon">
+            <img src="img/carne.jpeg" alt="Icono categoría" width="24">
+          </div>
+        </div>
+        <p> producto</p>
+        <div class="card-actions">
+          <button class="btn edit-btn">Editar</button>
+          <button class="btn delete-btn">Eliminar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span>Panadería</span>
+          <div class="square-icon">
+            <img src="img/panaderia.jpeg" alt="Icono categoría" width="24">
+          </div>
+        </div>
+        <p> producto</p>
+        <div class="card-actions">
+          <button class="btn edit-btn">Editar</button>
+          <button class="btn delete-btn">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
